@@ -245,4 +245,9 @@ async function startServer() {
   });
 }
 
-startServer();
+// Only start the server locally. Vercel will use the exported app instance.
+if (!process.env.VERCEL) {
+  startServer();
+}
+
+export default app;
