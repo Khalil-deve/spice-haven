@@ -1,0 +1,6 @@
+{
+  "name": "Spice Haven",
+  "description": "Spice Haven is a premium, high-end Indian dining experience inspired by classic Bombay cafés. Features an interactive menu, online reservations, beautiful food gallery, and a smart AI Assistant to guide your dining choices.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
