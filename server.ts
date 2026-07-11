@@ -13,10 +13,10 @@ const PORT = 3000;
 app.use(express.json());
 
 // Import Database and Routes
-import connectDB from "./backend/db";
-import authRoutes from "./backend/routes/authRoutes";
-import reservationRoutes from "./backend/routes/reservationRoutes";
-import reviewRoutes from "./backend/routes/reviewRoutes";
+import connectDB from "./backend/db.js";
+import authRoutes from "./backend/routes/authRoutes.js";
+import reservationRoutes from "./backend/routes/reservationRoutes.js";
+import reviewRoutes from "./backend/routes/reviewRoutes.js";
 
 // Connect to MongoDB
 if (!process.env.VERCEL) {

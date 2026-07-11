@@ -1,6 +1,6 @@
 import express from "express";
-import Reservation from "../models/Reservation";
-import { protect } from "../middleware/authMiddleware";
+import Reservation from "../models/Reservation.js";
+import { protect } from "../middleware/authMiddleware.js";
 
 const router = express.Router();
 
