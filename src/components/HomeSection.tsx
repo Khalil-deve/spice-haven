@@ -97,7 +97,7 @@ export default function HomeSection({ onPageChange, onOpenAssistant, onAddNotifi
   ];
 
   const instagramPosts = [
-    { id: 1, img: "https://images.unsplash.com/photo-1585938338990-21f1685eaa5c?auto=format&fit=crop&w=300&q=80" },
+    { id: 1, img: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=300&q=80" },
     { id: 2, img: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=300&q=80" },
     { id: 3, img: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=300&q=80" },
     { id: 4, img: "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=300&q=80" },

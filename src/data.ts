@@ -328,7 +328,7 @@ export const RESTAURANT_LOCATIONS: RestaurantLocation[] = [
 export const GALLERY_IMAGES: GalleryImage[] = [
   {
     id: "gal-1",
-    src: "https://images.unsplash.com/photo-1585938338990-21f1685eaa5c?auto=format&fit=crop&w=800&h=600&q=80",
+    src: "https://images.unsplash.com/photo-1592861956120-e524fc739696?auto=format&fit=crop&w=800&h=600&q=80",
     alt: "Spice Haven Main Dining Room",
     category: "interior",
     caption: "Our Covent Garden main hall showcasing salvaged vintage Bombay mirrors, hand-crafted teak columns, and marble seating.",
