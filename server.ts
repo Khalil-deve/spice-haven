@@ -19,7 +19,10 @@ import reservationRoutes from "./backend/routes/reservationRoutes";
 import reviewRoutes from "./backend/routes/reviewRoutes";
 
 // Connect to MongoDB
-connectDB();
+if (!process.env.VERCEL) {
+  // Local environment: connect immediately on startup
+  connectDB().catch(console.error);
+}
 
 
 // Lazy-initialize Gemini SDK to prevent crashes on startup if API key is not set
@@ -46,6 +49,18 @@ function getGeminiClient(): GoogleGenAI {
 // REST API Endpoints
 app.get("/api/health", (req: Request, res: Response) => {
   res.json({ status: "healthy", time: new Date().toISOString() });
+});
+
+// Lazy DB connection middleware for Vercel Serverless Functions
+app.use(async (req: Request, res: Response, next: express.NextFunction) => {
+  if (process.env.VERCEL && req.path.startsWith("/api")) {
+    try {
+      await connectDB();
+    } catch (err) {
+      console.error("DB connection error in middleware:", err);
+    }
+  }
+  next();
 });
 
 // API Routes
